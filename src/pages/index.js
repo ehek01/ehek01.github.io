@@ -2,17 +2,13 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Footer from "../components/home/Footer";
 import Profile from "../components/home/Profile";
+import Module from "../components/home/Module";
+import Layout from "../components/home/Layout";
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>My Personal Website</title>
-        <meta name="description" content="My personal website and portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
+    <Layout title={"My Personal Website"} description="My personal website and portfolio">
+      <div className={styles.container}>
         <h1 className={styles.title}>
           Welcome to My Personal Website
         </h1>
@@ -26,43 +22,31 @@ const Home = () => {
 
         <p className={styles.description}>
           Hi, I'm JongHyun Im! {/* Replace with your name */}
-          <br />
+          <br/>
           I'm a web developer, and this is my personal website.
         </p>
-
         <div className={styles.grid}>
-          <a href="/video" className={styles.card}>
-            <h2>Video Module &rarr;</h2>
-            <p>Find me on Video</p>
-          </a>
-
-          <a href="https://github.com/yourusername" className={styles.card}>
-            <h2>GitHub &rarr;</h2>
-            <p>Find me on GitHub</p>
-          </a>
-
-          <a href="https://twitter.com/yourusername" className={styles.card}>
-            <h2>Twitter &rarr;</h2>
-            <p>Follow me on Twitter</p>
-          </a>
-
-          <a href="https://linkedin.com/in/yourusername" className={styles.card}>
-            <h2>LinkedIn &rarr;</h2>
-            <p>Connect with me on LinkedIn</p>
-          </a>
-
-          <a href="/src/pages/community" className={styles.card}>
-            <h2>Community &rarr;</h2>
-            <p>Check out my community page</p>
-          </a>
+          <Module
+            path={"/video"}
+            title={"Video"}
+            body={"비디오 모듈 입니다."}
+            visible={true}
+          />
+          <Module
+            path={"/chat"}
+            title={"실시간 채팅"}
+            body={"와서 신나게 떠들다 가세요."}
+            visible={true}
+          />
+          <Module
+            path={"/community"}
+            title={"커뮤니티(준비중)"}
+            body={"종현이 커뮤니티에요."}
+            visible={false}
+          />
         </div>
-      </main>
-
-      <Footer
-        name={'JH'}
-        link={'https://github.com/ehek01'}
-      />
-    </div>
+      </div>
+    </Layout>
   );
 };
 

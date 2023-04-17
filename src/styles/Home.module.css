@@ -87,6 +87,40 @@
     line-height: 1.5;
 }
 
+.card-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.card-enabled {
+    pointer-events: auto;
+}
+
+.card-content {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.cardContent {
+    cursor: pointer;
+}
+
+
+.card-disabled:hover,
+.card-disabled:focus,
+.card-disabled:active {
+    color: inherit;
+    border-color: #eaeaea;
+}
+
+
 .profile {
     margin-bottom: 2rem;
 }
