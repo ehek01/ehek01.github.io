@@ -31,6 +31,11 @@ const Home = () => {
         </p>
 
         <div className={styles.grid}>
+          <a href="/video" className={styles.card}>
+            <h2>Video Module &rarr;</h2>
+            <p>Find me on Video</p>
+          </a>
+
           <a href="https://github.com/yourusername" className={styles.card}>
             <h2>GitHub &rarr;</h2>
             <p>Find me on GitHub</p>
