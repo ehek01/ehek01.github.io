@@ -1,0 +1,19 @@
+{
+  "name": "ehek01.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ehek01/ehek01.github.io.git",
+  "author": "ehek01",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "next": "^13.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
