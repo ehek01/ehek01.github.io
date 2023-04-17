@@ -13,5 +13,4 @@ out
 # Miscellaneous
 .DS_Store
 .npmrc
-yarn.lock
 *.log
