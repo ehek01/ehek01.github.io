@@ -1,34 +1,25 @@
 {
-  "name": "ehek01.github.io",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/ehek01/ehek01.github.io.git",
-  "author": "ehek01",
-  "license": "MIT",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.12.0",
-    "@reduxjs/toolkit": "^1.9.4",
-    "express": "^4.18.2",
-    "next": "^13.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-redux": "^8.0.5",
-    "redux": "^4.2.1",
-    "socket.io": "^4.6.1",
-    "socket.io-client": "^4.6.1",
-    "ws": "^8.13.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.35",
-    "typescript": "^5.0.4"
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
   }
 }
